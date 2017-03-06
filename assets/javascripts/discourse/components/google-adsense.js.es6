@@ -46,7 +46,8 @@ var data = {
   "topic-list-top" : {},
   "topic-above-post-stream" : {},
   "topic-above-suggested" : {},
-  "post-bottom" : {}
+  "post-bottom" : {},
+  "topic-bottom" : {}
 };
 
 if (Discourse.SiteSettings.adsense_publisher_code) {
@@ -81,6 +82,14 @@ if (Discourse.SiteSettings.adsense_publisher_code) {
   }
   if (mobileView && Discourse.SiteSettings.adsense_mobile_post_bottom_code) {
     data["post-bottom"]["ad_mobile_code"] = Discourse.SiteSettings.adsense_mobile_post_bottom_code;
+  }
+  if (!mobileView && Discourse.SiteSettings.adsense_topic_bottom_code) {
+    data["topic-bottom"]["ad_code"] = Discourse.SiteSettings.adsense_topic_bottom_code;
+    data["topic-bottom"]["ad_width"] = parseInt(splitWidthInt(Discourse.SiteSettings.adsense_topic_bottom_ad_sizes));
+    data["topic-bottom"]["ad_height"] = parseInt(splitHeightInt(Discourse.SiteSettings.adsense_topic_bottom_ad_sizes));
+  }
+  if (mobileView && Discourse.SiteSettings.adsense_mobile_topic_bottom_code) {
+    data["topic-bottom"]["ad_mobile_code"] = Discourse.SiteSettings.adsense_mobile_topic_bottom_code;
   }
 }
 
