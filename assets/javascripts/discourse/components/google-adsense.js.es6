@@ -133,7 +133,11 @@ export default Ember.Component.extend({
   },
 
   adWrapperStyle: function() {
-    return `width: ${this.get('ad_width')}px; height: ${this.get('ad_height')}px;`.htmlSafe();
+    if (window.innerWidth < 980 && this.get('ad_width') > window.innerWidth) {
+        return `width: ${window.innerWidth - 10}px; height: ${this.get('ad_height')}px;`.htmlSafe();
+    } else {
+      return `width: ${this.get('ad_width')}px; height: ${this.get('ad_height')}px;`.htmlSafe();
+    }
   }.property('ad_width', 'ad_height'),
 
   adInsStyle: function() {
