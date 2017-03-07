@@ -162,6 +162,10 @@ adsense_plugin:
       - 300*600 - half page ad
       - 320*100 - large mobile banner
       - 690*250
+  adsense_nth_topic_code:
+    client: true
+    default: ''
+    min: 1
   adsense_nth_post_code:
     client: true
     default: ''

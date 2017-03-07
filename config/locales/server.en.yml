@@ -49,7 +49,8 @@ en:
     adsense_topic_bottom_code: "Enter code of the ad unit to display ads at topic bottom location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_mobile_topic_bottom_code: "Enter code of the ad unit to display mobile ads at topic bottom location. This is the number assigned to the ad unit, not the JavaScript code."
     adsense_topic_bottom_ad_sizes: "Choose your ad sizes"
-    adsense_nth_post_code: "Show an ad after every N posts or topics, where N is this value."
+    adsense_nth_topic_code: "Show an ad after every N topics, where N is this value."
+    adsense_nth_post_code: "Show an ad after every N posts, where N is this value."
 
     amazon_through_trust_level: "Show your ads to users based on trust levels. Users with trust level higher than this value will not see ads."
     amazon_topic_list_top_src_code: "Enter src code to display at topic list top location"
