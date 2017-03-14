@@ -56,7 +56,6 @@ function custom_targeting(key_array, value_array, location) {
 }
 
 function defineSlot(divId, placement, settings, isMobile) {
-    console.log('fegine slot', placement, settings)
   if (!settings.dfp_publisher_id) {
     return;
   }
@@ -113,28 +112,19 @@ function defineSlot(divId, placement, settings, isMobile) {
       width = parseInt(splitWidthInt(settings.dfp_post_bottom_ad_sizes));
       height = parseInt(splitHeightInt(settings.dfp_post_bottom_ad_sizes));
       ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
-        console.log('topic-bottom', settings.dfp_post_bottom_code, settings.dfp_post_bottom_ad_sizes, height, width, divId, ad)
         custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
     }
   } else if (placement === "topic-bottom" && settings.dfp_topic_bottom_code && settings.dfp_topic_bottom_ad_sizes) {
     if (isMobile) {
-        console.log('topic-bottom mobile', settings.dfp_topic_bottom_code, settings.dfp_topic_bottom_ad_sizes)
-        width = parseInt(splitWidthInt(settings.dfp_mobile_topic_bottom_ad_sizes));
+      width = parseInt(splitWidthInt(settings.dfp_mobile_topic_bottom_ad_sizes));
       height = parseInt(splitHeightInt(settings.dfp_mobile_topic_bottom_ad_sizes));
       ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_bottom_code, [width,height], divId).addService(window.googletag.pubads());
       custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
     } else {
-        width = parseInt(splitWidthInt(settings.dfp_post_bottom_ad_sizes));
-        height = parseInt(splitHeightInt(settings.dfp_post_bottom_ad_sizes));
-        console.log('v1.4', width, height)
+        width = parseInt(splitWidthInt(settings.dfp_topic_bottom_ad_sizes));
+        height = parseInt(splitHeightInt(settings.dfp_topic_bottom_ad_sizes));
         ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
         custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
-
-        // width = parseInt(splitWidthInt(settings.dfp_topic_bottom_ad_sizes));
-        // height = parseInt(splitHeightInt(settings.dfp_topic_bottom_ad_sizes));
-        // ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
-        // console.log('topic-bottom', settings.dfp_topic_bottom_code, settings.dfp_topic_bottom_ad_sizes, height, width, divId, ad)
-        // custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
     }
   }
 
