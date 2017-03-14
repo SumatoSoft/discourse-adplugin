@@ -6,7 +6,7 @@
     {{/if}}
     {{#if siteSettings.dfp_mobile_topic_bottom_code}}
       {{#if (isRenderAdvInList index siteSettings.dfp_nth_topic_code)}}
-          {{google-dfp-ad placement="post-bottom" category="topic-list" postNumber=topic.id}}
+          {{google-dfp-ad placement="topic-bottom" category="topic-list" postNumber=topic.id}}
       {{/if}}
     {{/if}}
 {{else}}
@@ -17,7 +17,7 @@
     {{/if}}
     {{#if siteSettings.dfp_topic_bottom_code}}
       {{#if (isRenderAdvInList index siteSettings.dfp_nth_topic_code)}}
-          {{google-dfp-ad placement="post-bottom" category="topic-list" postNumber=topic.id}}
+          {{google-dfp-ad placement="topic-bottom" category="topic-list" postNumber=topic.id}}
       {{/if}}
     {{/if}}
 {{/if}}
