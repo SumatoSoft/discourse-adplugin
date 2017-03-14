@@ -396,6 +396,63 @@ dfp_plugin:
     default: ''
     type: value_list
     client: true
+  dfp_nth_topic_code:
+    client: true
+    default: ''
+    min: 1
+  dfp_topic_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_topic_bottom_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices:
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+      - 690*250
+  dfp_mobile_topic_bottom_code:
+    client: true
+    default: ''
+    max: 50
+  dfp_mobile_topic_bottom_ad_sizes:
+    client: true
+    default: '320*50 - mobile leaderboard'
+    type: enum
+    choices:
+      - 320*50 - mobile leaderboard
+      - 300*250 - medium rectangle
+      - 336*280 - large rectangle
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+  dfp_target_topic_bottom_key_code:
+    default: ''
+    type: value_list
+    client: true
+  dfp_target_topic_bottom_value_code:
+    default: ''
+    type: value_list
+    client: true
 
 amazon_plugin:
   amazon_through_trust_level:

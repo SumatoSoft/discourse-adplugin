@@ -32,6 +32,14 @@ en:
     dfp_target_post_bottom_key_code: "Input custom targeting keys - inventory Level"
     dfp_target_post_bottom_value_code: "Input custom targeting values - inventory Level"
 
+    dfp_nth_topic_code: "Show an ad after every N topics, where N is this value."
+    dfp_topic_bottom_code: "Enter the code of the ad unit to display in between topics after every nth topic. This is the short code (max 100 chars) of the ad unit, not the JavaScript code."
+    dfp_topic_bottom_ad_sizes: "Choose your ad size for the ad unit shown in between topics."
+    dfp_mobile_topic_bottom_code: "Enter the code of the ad unit to display in between topics after every nth topic on mobile. This is the short code (max 100 chars) of the ad unit, not the JavaScript code."
+    dfp_mobile_topic_bottom_ad_sizes: "Choose your ad size for the ad unit shown in between topics on mobile view."
+    dfp_target_topic_bottom_key_code: "Input custom targeting keys - inventory Level"
+    dfp_target_topic_bottom_value_code: "Input custom targeting values - inventory Level"
+
     adsense_publisher_code: "Your publisher ID. Enter only the number, excluding 'pub-'."
     adsense_through_trust_level: "Show your ads to users based on trust levels. Users with trust level higher than this value will not see ads."
     adsense_topic_list_top_code: "Enter code of the ad unit to display at topic list top location. This is the number assigned to the ad unit, not the JavaScript code."

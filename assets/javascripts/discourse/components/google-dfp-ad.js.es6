@@ -115,6 +115,18 @@ function defineSlot(divId, placement, settings, isMobile) {
       ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
       custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
     }
+  } else if (placement === "topic-bottom" && settings.dfp_topic_bottom_code && settings.dfp_topic_bottom_ad_sizes) {
+    if (isMobile) {
+      width = parseInt(splitWidthInt(settings.dfp_mobile_topic_bottom_ad_sizes));
+      height = parseInt(splitHeightInt(settings.dfp_mobile_topic_bottom_ad_sizes));
+      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_bottom_code, [width,height], divId).addService(window.googletag.pubads());
+      custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
+    } else {
+      width = parseInt(splitWidthInt(settings.dfp_topic_bottom_ad_sizes));
+      height = parseInt(splitHeightInt(settings.dfp_topic_bottom_ad_sizes));
+      ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
+      custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
+    }
   }
 
   if (ad) {

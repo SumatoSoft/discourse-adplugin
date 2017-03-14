@@ -4,10 +4,20 @@
           {{google-adsense placement="topic-bottom"}}
       {{/if}}
     {{/if}}
+    {{#if siteSettings.dfp_mobile_topic_bottom_code}}
+      {{#if (isRenderAdvInList index siteSettings.dfp_nth_topic_code)}}
+          {{google-dfp-ad placement="topic-bottom"}}
+      {{/if}}
+    {{/if}}
 {{else}}
     {{#if siteSettings.adsense_topic_bottom_code}}
       {{#if (isRenderAdvInList index siteSettings.adsense_nth_topic_code)}}
           {{google-adsense placement="topic-bottom"}}
+      {{/if}}
+    {{/if}}
+    {{#if siteSettings.dfp_mobile_topic_bottom_code}}
+      {{#if (isRenderAdvInList index siteSettings.dfp_nth_topic_code)}}
+          {{google-dfp-ad placement="topic-bottom"}}
       {{/if}}
     {{/if}}
 {{/if}}
