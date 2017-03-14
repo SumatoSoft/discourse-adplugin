@@ -124,10 +124,10 @@ function defineSlot(divId, placement, settings, isMobile) {
       ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_bottom_code, [width,height], divId).addService(window.googletag.pubads());
       custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
     } else {
-      console.log('v1.3')
         width = parseInt(splitWidthInt(settings.dfp_post_bottom_ad_sizes));
         height = parseInt(splitHeightInt(settings.dfp_post_bottom_ad_sizes));
-        ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
+        console.log('v1.4', width, height)
+        ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
         custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
 
         // width = parseInt(splitWidthInt(settings.dfp_topic_bottom_ad_sizes));
