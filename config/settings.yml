@@ -412,8 +412,6 @@ dfp_plugin:
       - 728*90 - leaderboard
       - 336*280 - large rectangle
       - 300*250 - medium rectangle
-      - 970*90 - large leaderboard
-      - 970*250 - billboard
       - 468*60 - banner
       - 320*50 - mobile leaderboard
       - 160*600 - wide skyscraper
