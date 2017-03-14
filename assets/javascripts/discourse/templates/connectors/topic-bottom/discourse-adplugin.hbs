@@ -1,13 +1,13 @@
 {{#if site.mobileView}}
-  {{#if (isRenderAdvInList index siteSettings.adsense_nth_topic_code)}}
     {{#if siteSettings.adsense_mobile_topic_bottom_code}}
-      {{google-adsense placement="topic-bottom"}}
+      {{#if (isRenderAdvInList index siteSettings.adsense_nth_topic_code)}}
+          {{google-adsense placement="topic-bottom"}}
+      {{/if}}
     {{/if}}
-  {{/if}}
 {{else}}
-  {{#if (isRenderAdvInList index siteSettings.adsense_nth_topic_code)}}
     {{#if siteSettings.adsense_topic_bottom_code}}
-      {{google-adsense placement="topic-bottom"}}
+      {{#if (isRenderAdvInList index siteSettings.adsense_nth_topic_code)}}
+          {{google-adsense placement="topic-bottom"}}
+      {{/if}}
     {{/if}}
-  {{/if}}
 {{/if}}

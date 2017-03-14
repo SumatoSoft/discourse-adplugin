@@ -183,7 +183,11 @@ export default Ember.Component.extend({
   }.property('placement'),
 
   adWrapperStyle: function() {
-    return `width: ${this.get('width')}px; height: ${this.get('height')}px;`.htmlSafe();
+    if (window.innerWidth < 980 && this.get('width') > window.innerWidth) {
+      return `width: ${window.innerWidth - 10}px; height: ${this.get('height')}px;`.htmlSafe();
+    } else {
+      return `width: ${this.get('width')}px; height: ${this.get('height')}px;`.htmlSafe();
+    }
   }.property('width', 'height'),
 
   adTitleStyleMobile: function() {
