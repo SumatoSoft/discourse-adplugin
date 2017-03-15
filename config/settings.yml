@@ -210,6 +210,7 @@ dfp_plugin:
   dfp_mobile_topic_list_top_ad_sizes:
     client: true
     default: '300*250 - mobile rectangle'
+    type: enum
     choices:
       - 300*300 - mobile square
       - 300*250 - medium rectangle
