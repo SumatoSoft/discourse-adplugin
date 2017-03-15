@@ -145,8 +145,8 @@ function defineSlot(divId, placement, settings, isMobile) {
 }
 
 function adaptWidthForMobiles(width) {
-    // return width
-    return (window.innerWidth < 980 && width >= window.innerWidth - 20) ? window.innerWidth - 20 : width
+    return width
+    // return (window.innerWidth < 980 && width >= window.innerWidth - 20) ? window.innerWidth - 20 : width
 }
 
 function destroySlot(divId) {
