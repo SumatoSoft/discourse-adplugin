@@ -191,6 +191,7 @@ dfp_plugin:
       - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 728*90 - leaderboard
   dfp_tablet_topic_list_top_code:
     client: true
     default: ''
@@ -234,6 +235,7 @@ dfp_plugin:
       - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 728*90 - leaderboard
   dfp_tablet_topic_above_post_stream_code:
     client: true
     default: ''
@@ -277,6 +279,7 @@ dfp_plugin:
       - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 728*90 - leaderboard
   dfp_tablet_topic_above_suggested_code:
     client: true
     default: ''
@@ -325,6 +328,7 @@ dfp_plugin:
       - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 728*90 - leaderboard
   dfp_tablet_post_bottom_code:
     client: true
     default: ''
@@ -372,6 +376,7 @@ dfp_plugin:
       - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
+      - 728*90 - leaderboard
   dfp_tablet_topic_bottom_code:
     client: true
     default: ''
