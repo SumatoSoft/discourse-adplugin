@@ -185,25 +185,12 @@ dfp_plugin:
     max: 50
   dfp_topic_list_top_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: '970*90 - large leaderboard'
     type: enum
     choices:
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
+      - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_tablet_topic_list_top_code:
     client: true
     default: ''
@@ -213,42 +200,19 @@ dfp_plugin:
     default: '728*90 - leaderboard'
     type: enum
     choices:
+      - 800*600
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_mobile_topic_list_top_code:
     client: true
     default: ''
     max: 50
   dfp_mobile_topic_list_top_ad_sizes:
     client: true
-    default: '320*50 - mobile leaderboard'
-    type: enum
+    default: '300*250 - mobile rectangle'
     choices:
-      - 320*50 - mobile leaderboard
+      - 300*300 - mobile square
       - 300*250 - medium rectangle
-      - 336*280 - large rectangle
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
   dfp_target_topic_list_top_key_code:
     default: ''
     type: value_list
@@ -263,25 +227,12 @@ dfp_plugin:
     max: 50
   dfp_topic_above_post_stream_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: '970*90 - large leaderboard'
     type: enum
     choices:
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
+      - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_tablet_topic_above_post_stream_code:
     client: true
     default: ''
@@ -291,42 +242,20 @@ dfp_plugin:
     default: '728*90 - leaderboard'
     type: enum
     choices:
+      - 800*600
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_mobile_topic_above_post_stream_code:
     client: true
     default: ''
     max: 50
   dfp_mobile_topic_above_post_stream_ad_sizes:
     client: true
-    default: '320*50 - mobile leaderboard'
+    default: '300*250 - mobile rectangle'
     type: enum
     choices:
-      - 320*50 - mobile leaderboard
+      - 300*300 - mobile square
       - 300*250 - medium rectangle
-      - 336*280 - large rectangle
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
   dfp_target_topic_above_post_stream_key_code:
     default: ''
     type: value_list
@@ -341,25 +270,12 @@ dfp_plugin:
     max: 50
   dfp_topic_above_suggested_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: '970*90 - large leaderboard'
     type: enum
     choices:
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
+      - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_tablet_topic_above_suggested_code:
     client: true
     default: ''
@@ -369,42 +285,20 @@ dfp_plugin:
     default: '728*90 - leaderboard'
     type: enum
     choices:
+      - 800*600
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_mobile_topic_above_suggested_code:
     client: true
     default: ''
     max: 50
   dfp_mobile_topic_above_suggested_ad_sizes:
     client: true
-    default: '320*50 - mobile leaderboard'
+    default: '300*250 - mobile rectangle'
     type: enum
     choices:
-      - 320*50 - mobile leaderboard
+      - 300*300 - mobile square
       - 300*250 - medium rectangle
-      - 336*280 - large rectangle
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
   dfp_target_topic_above_suggested_key_code:
     default: ''
     type: value_list
@@ -424,25 +318,12 @@ dfp_plugin:
     max: 50
   dfp_post_bottom_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: '970*90 - large leaderboard'
     type: enum
     choices:
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
+      - 1280*800
       - 970*90 - large leaderboard
       - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_tablet_post_bottom_code:
     client: true
     default: ''
@@ -452,42 +333,20 @@ dfp_plugin:
     default: '728*90 - leaderboard'
     type: enum
     choices:
+      - 800*600
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
       - 970*90 - large leaderboard
-      - 970*250 - billboard
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
   dfp_mobile_post_bottom_code:
     client: true
     default: ''
     max: 50
   dfp_mobile_post_bottom_ad_sizes:
     client: true
-    default: '320*50 - mobile leaderboard'
+    default: '300*250 - mobile rectangle'
     type: enum
     choices:
-      - 320*50 - mobile leaderboard
+      - 300*300 - mobile square
       - 300*250 - medium rectangle
-      - 336*280 - large rectangle
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
   dfp_target_post_bottom_key_code:
     default: ''
     type: value_list
@@ -506,23 +365,12 @@ dfp_plugin:
     max: 50
   dfp_topic_bottom_ad_sizes:
     client: true
-    default: '728*90 - leaderboard'
+    default: '970*90 - large leaderboard'
     type: enum
     choices:
-      - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
+      - 1280*800
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
   dfp_tablet_topic_bottom_code:
     client: true
     default: ''
@@ -532,40 +380,20 @@ dfp_plugin:
     default: '728*90 - leaderboard'
     type: enum
     choices:
+      - 800*600
       - 728*90 - leaderboard
-      - 336*280 - large rectangle
-      - 300*250 - medium rectangle
-      - 468*60 - banner
-      - 320*50 - mobile leaderboard
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
-      - 690*250
+      - 970*90 - large leaderboard
   dfp_mobile_topic_bottom_code:
     client: true
     default: ''
     max: 50
   dfp_mobile_topic_bottom_ad_sizes:
     client: true
-    default: '320*50 - mobile leaderboard'
+    default: '300*250 - mobile rectangle'
     type: enum
     choices:
-      - 320*50 - mobile leaderboard
+      - 300*300 - mobile square
       - 300*250 - medium rectangle
-      - 336*280 - large rectangle
-      - 160*600 - wide skyscraper
-      - 234*60 - half banner
-      - 125*125 - button
-      - 180*150 - small rectangle
-      - 200*200 - small square
-      - 250*250 - square
-      - 300*600 - half page ad
-      - 320*100 - large mobile banner
   dfp_target_topic_bottom_key_code:
     default: ''
     type: value_list
