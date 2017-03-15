@@ -69,11 +69,13 @@ function defineSlot(divId, placement, settings, isMobile) {
     if (placement === "topic-list-top" && settings.dfp_topic_list_top_code && settings.dfp_topic_list_top_ad_sizes) {
         if (isMobile) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_list_top_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_list_top_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_list_top_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(Discourse.SiteSettings.dfp_target_topic_list_top_key_code)), (keyParse(settings.dfp_target_topic_list_top_value_code)), ad);
         } else {
             width = parseInt(splitWidthInt(settings.dfp_topic_list_top_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_topic_list_top_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_list_top_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_list_top_key_code)), (keyParse(settings.dfp_target_topic_list_top_value_code)), ad);
@@ -81,11 +83,13 @@ function defineSlot(divId, placement, settings, isMobile) {
     } else if (placement === "topic-above-post-stream" && settings.dfp_topic_above_post_stream_code && settings.dfp_topic_above_post_stream_ad_sizes) {
         if (isMobile) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_above_post_stream_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_above_post_stream_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_above_post_stream_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_above_post_stream_key_code)), (keyParse(settings.dfp_target_topic_above_post_stream_value_code)), ad);
         } else {
             width = parseInt(splitWidthInt(settings.dfp_topic_above_post_stream_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_topic_above_post_stream_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_above_post_stream_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_above_post_stream_key_code)), (keyParse(settings.dfp_target_topic_above_post_stream_value_code)), ad);
@@ -93,11 +97,13 @@ function defineSlot(divId, placement, settings, isMobile) {
     } else if (placement === "topic-above-suggested" && settings.dfp_topic_above_suggested_code && settings.dfp_topic_above_suggested_ad_sizes) {
         if (isMobile) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_above_suggested_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_above_suggested_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_above_suggested_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_above_suggested_key_code)), (keyParse(settings.dfp_target_topic_above_suggested_value_code)), ad);
         } else {
             width = parseInt(splitWidthInt(settings.dfp_topic_above_suggested_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_topic_above_suggested_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_above_suggested_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_above_suggested_key_code)), (keyParse(settings.dfp_target_topic_above_suggested_value_code)), ad);
@@ -105,11 +111,13 @@ function defineSlot(divId, placement, settings, isMobile) {
     } else if (placement === "post-bottom" && settings.dfp_post_bottom_code && settings.dfp_post_bottom_ad_sizes) {
         if (isMobile) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_post_bottom_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_post_bottom_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
         } else {
             width = parseInt(splitWidthInt(settings.dfp_post_bottom_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_post_bottom_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_post_bottom_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
@@ -117,11 +125,13 @@ function defineSlot(divId, placement, settings, isMobile) {
     } else if (placement === "topic-bottom" && settings.dfp_topic_bottom_code && settings.dfp_topic_bottom_ad_sizes) {
         if (isMobile) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_bottom_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_bottom_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_mobile_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
         } else {
             width = parseInt(splitWidthInt(settings.dfp_topic_bottom_ad_sizes));
+            width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_topic_bottom_ad_sizes));
             ad = window.googletag.defineSlot('/' + settings.dfp_publisher_id + '/' + settings.dfp_topic_bottom_code, [width, height], divId).addService(window.googletag.pubads());
             custom_targeting((keyParse(settings.dfp_target_topic_bottom_key_code)), (keyParse(settings.dfp_target_topic_bottom_value_code)), ad);
@@ -132,6 +142,11 @@ function defineSlot(divId, placement, settings, isMobile) {
         ads[divId] = {ad: ad, width: width, height: height};
         return ads[divId];
     }
+}
+
+function adaptWidthForMobiles(width) {
+    // return width
+    return (window.innerWidth < 980 && width >= window.innerWidth - 20) ? window.innerWidth - 20 : width
 }
 
 function destroySlot(divId) {
@@ -194,11 +209,7 @@ export default Ember.Component.extend({
     }.property('placement'),
 
     adWrapperStyle: function () {
-        if (window.innerWidth < 980 && this.get('width') > window.innerWidth) {
-            return `width: ${window.innerWidth - 10}px; height: ${this.get('height')}px;`.htmlSafe();
-        } else {
-            return `width: ${this.get('width')}px; height: ${this.get('height')}px;`.htmlSafe();
-        }
+        return `width: ${adaptWidthForMobiles(this.get('width'))}px; height: ${this.get('height')}px;`.htmlSafe();
     }.property('width', 'height'),
 
     adTitleStyleMobile: function () {
