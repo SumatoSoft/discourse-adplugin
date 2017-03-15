@@ -67,7 +67,7 @@ function defineSlot(divId, placement, settings, isMobile) {
     }
 
     if (placement === "topic-list-top" && settings.dfp_topic_list_top_code && settings.dfp_topic_list_top_ad_sizes) {
-        if (isMobile) {
+        if (isMobileOrTablet(isMobile)) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_list_top_ad_sizes));
             width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_list_top_ad_sizes));
@@ -81,7 +81,7 @@ function defineSlot(divId, placement, settings, isMobile) {
             custom_targeting((keyParse(settings.dfp_target_topic_list_top_key_code)), (keyParse(settings.dfp_target_topic_list_top_value_code)), ad);
         }
     } else if (placement === "topic-above-post-stream" && settings.dfp_topic_above_post_stream_code && settings.dfp_topic_above_post_stream_ad_sizes) {
-        if (isMobile) {
+        if (isMobileOrTablet(isMobile)) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_above_post_stream_ad_sizes));
             width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_above_post_stream_ad_sizes));
@@ -95,7 +95,7 @@ function defineSlot(divId, placement, settings, isMobile) {
             custom_targeting((keyParse(settings.dfp_target_topic_above_post_stream_key_code)), (keyParse(settings.dfp_target_topic_above_post_stream_value_code)), ad);
         }
     } else if (placement === "topic-above-suggested" && settings.dfp_topic_above_suggested_code && settings.dfp_topic_above_suggested_ad_sizes) {
-        if (isMobile) {
+        if (isMobileOrTablet(isMobile)) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_above_suggested_ad_sizes));
             width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_above_suggested_ad_sizes));
@@ -109,7 +109,7 @@ function defineSlot(divId, placement, settings, isMobile) {
             custom_targeting((keyParse(settings.dfp_target_topic_above_suggested_key_code)), (keyParse(settings.dfp_target_topic_above_suggested_value_code)), ad);
         }
     } else if (placement === "post-bottom" && settings.dfp_post_bottom_code && settings.dfp_post_bottom_ad_sizes) {
-        if (isMobile) {
+        if (isMobileOrTablet(isMobile)) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_post_bottom_ad_sizes));
             width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_post_bottom_ad_sizes));
@@ -123,7 +123,7 @@ function defineSlot(divId, placement, settings, isMobile) {
             custom_targeting((keyParse(settings.dfp_target_post_bottom_key_code)), (keyParse(settings.dfp_target_post_bottom_value_code)), ad);
         }
     } else if (placement === "topic-bottom" && settings.dfp_topic_bottom_code && settings.dfp_topic_bottom_ad_sizes) {
-        if (isMobile) {
+        if (isMobileOrTablet(isMobile)) {
             width = parseInt(splitWidthInt(settings.dfp_mobile_topic_bottom_ad_sizes));
             width = adaptWidthForMobiles(width)
             height = parseInt(splitHeightInt(settings.dfp_mobile_topic_bottom_ad_sizes));
@@ -146,9 +146,14 @@ function defineSlot(divId, placement, settings, isMobile) {
 
 function adaptWidthForMobiles(width) {
     return width
-    // return (window.innerWidth < 980 && width >= window.innerWidth - 20) ? window.innerWidth - 20 : width
+    // return (window.innerWidth < 970 && width >= window.innerWidth - 20) ? window.innerWidth - 20 : width
 }
 
+
+function isMobileOrTablet(isMobile) {
+    if (isMobile) return true
+    return window.innerWidth < 970
+}
 function destroySlot(divId) {
     if (ads[divId] && window.googletag) {
         window.googletag.cmd.push(function () {
